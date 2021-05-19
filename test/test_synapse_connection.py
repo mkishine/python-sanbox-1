@@ -1,14 +1,15 @@
 import unittest
 import pyodbc
+import keyring
 
-class TestStringMethods(unittest.TestCase):
+class TestSynapseConnection(unittest.TestCase):
 
     def test_first_ever(self):
         # given
         dsn='PortriskSynapse'
         db='portrisk_synapse_workspace_sql_pool'
         user='sqladminuser'
-        pwd='PortriskSqlPool!'
+        pwd=keyring.get_password("synapse", user)
         # when
         connStr='DSN={}; UID={}; PWD={}'.format(dsn, user, pwd)
         conn=pyodbc.connect(connStr)

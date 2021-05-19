@@ -16,6 +16,13 @@ pip install -r requirements.txt
 . venv/bin/activate
 ```
 
+# Setting Synapse Password
+After activation run once:
+```
+keyring set synapse sqladminuser
+```
+At the prompt enter the password.
+
 # Running Script
 ```
 python synconn.py

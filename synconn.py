@@ -1,15 +1,15 @@
 #! /usr/bin/env python3
 
 import pyodbc
+import keyring
 
 dsn='PortriskSynapse'
 db='portrisk_synapse_workspace_sql_pool'
 user='sqladminuser'
-pwd='PortriskSqlPool!'
+pwd=keyring.get_password("synapse", user)
 
 
 connStr='DSN={}; UID={}; PWD={}'.format(dsn, user, pwd)
-print(connStr)
 conn=pyodbc.connect(connStr)
 
 cursor = conn.cursor()
