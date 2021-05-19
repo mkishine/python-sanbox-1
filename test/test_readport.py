@@ -12,7 +12,7 @@ import readport
 
 def head(filename, n):
     with open(filename) as f:
-        h = [next(f) for x in range(n)]
+        h = [next(f) for _ in range(n)]
     return h
 
 
