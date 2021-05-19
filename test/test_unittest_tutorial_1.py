@@ -1,6 +1,7 @@
 # inspired by Basic Example from https://docs.python.org/3/library/unittest.html
 import unittest
 
+
 class TestStringMethods(unittest.TestCase):
 
     def test_upper(self):
@@ -15,7 +16,9 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(s.split(), ['hello', 'world'])
         # check that s.split fails when the separator is not a string
         with self.assertRaises(TypeError):
+            # noinspection PyTypeChecker
             s.split(2)
+
 
 if __name__ == '__main__':
     unittest.main()
