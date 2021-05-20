@@ -11,30 +11,41 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-# Activation
+## Activation
 ```
 . venv/bin/activate
 ```
+## Deactivation
+```
+deactivate
+```
 
-# Setting Synapse Password
+# Scripts
+## Synconn.py
+Illustrates connection to the Synapse database
+
+### Setting Synapse Password
 After activation run once:
 ```
 keyring set synapse sqladminuser
 ```
 At the prompt enter the password.
 
-# Running Script
+### Running the Script
 ```
 python synconn.py
 ```
 
-Running Tests
+### Running Tests
 ```
 cd test
 python -m unittest test_synapse_connection
 ```
 
-# Deactivation
+## Readport.py
+Script for generating input files for population exposure database tables
+
+### Running the Script
 ```
-deactivate
+python readport.py -l --var_factor_file data/input/var_factor --out_dir data/output data/input/exposures-small-sample.txt
 ```
