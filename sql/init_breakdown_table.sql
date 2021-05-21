@@ -5,10 +5,10 @@ GO
 create table breakdown (
     breakdown_name char(10),
     cusip char(9),
-    level_1 varchar(20),
-    level_2 varchar(20),
-    level_3 varchar(20),
-    level_4 varchar(20)
+    level_1 varchar(50),
+    level_2 varchar(50),
+    level_3 varchar(50),
+    level_4 varchar(50)
 )
 go
 
