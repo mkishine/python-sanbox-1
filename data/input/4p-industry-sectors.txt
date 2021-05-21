@@ -1,0 +1,58 @@
+level1	level2	level3	level4
+Cash Securities	Other
+Corporates	Financial Institutions	Banking
+Corporates	Financial Institutions	Brokerage/Asset Managers/Exchanges
+Corporates	Financial Institutions	Finance Companies
+Corporates	Financial Institutions	Financial Other
+Corporates	Financial Institutions	Insurance	Health Insurance
+Corporates	Financial Institutions	Insurance	Life Insurance
+Corporates	Financial Institutions	Insurance	Property and Casualty
+Corporates	Financial Institutions	REITs	Apartment REIT
+Corporates	Financial Institutions	REITs	Healthcare REIT
+Corporates	Financial Institutions	REITs	Office REIT
+Corporates	Financial Institutions	REITs	Other REIT
+Corporates	Financial Institutions	REITs	Retail REIT
+Corporates	Industrial	Basic Industry	Chemicals
+Corporates	Industrial	Basic Industry	Metals and Mining
+Corporates	Industrial	Basic Industry	Paper
+Corporates	Industrial	Capital Goods	Aerospace and Defense
+Corporates	Industrial	Capital Goods	Building Materials
+Corporates	Industrial	Capital Goods	Construction Machinery
+Corporates	Industrial	Capital Goods	Diversified Manufacturing
+Corporates	Industrial	Capital Goods	Environmental
+Corporates	Industrial	Capital Goods	Packaging
+Corporates	Industrial	Communications	Cable and Satellite
+Corporates	Industrial	Communications	Media and Entertainment
+Corporates	Industrial	Communications	Wireless
+Corporates	Industrial	Communications	Wirelines
+Corporates	Industrial	Consumer Cyclical	Automotive
+Corporates	Industrial	Consumer Cyclical	Consumer Cyclical Services
+Corporates	Industrial	Consumer Cyclical	Gaming
+Corporates	Industrial	Consumer Cyclical	Home Construction
+Corporates	Industrial	Consumer Cyclical	Lodging
+Corporates	Industrial	Consumer Cyclical	Restaurants
+Corporates	Industrial	Consumer Cyclical	Retailers
+Corporates	Industrial	Consumer Non-Cyclical	Consumer Products
+Corporates	Industrial	Consumer Non-Cyclical	Food and Beverage
+Corporates	Industrial	Consumer Non-Cyclical	Healthcare
+Corporates	Industrial	Consumer Non-Cyclical	Pharmaceuticals
+Corporates	Industrial	Consumer Non-Cyclical	Supermarkets
+Corporates	Industrial	Consumer Non-Cyclical	Tobacco
+Corporates	Industrial	Energy	Independent
+Corporates	Industrial	Energy	Integrated
+Corporates	Industrial	Energy	Midstream
+Corporates	Industrial	Energy	Oil Field Services
+Corporates	Industrial	Energy	Refining
+Corporates	Industrial	Industrial Other
+Corporates	Industrial	Technology
+Corporates	Industrial	Transportation	Airlines
+Corporates	Industrial	Transportation	Railroads
+Corporates	Industrial	Transportation	Transportation Services
+Corporates	Utility	Electric
+Corporates	Utility	Natural Gas
+Corporates	Utility	Utility Other
+Government Related	Agency	Government Guaranteed
+Government Related	Agency	Owned No Guarantee
+Government Related	Local Authority
+Government Related	Sovereign
+Government Related	Supranational
