@@ -49,3 +49,13 @@ Script for generating input files for population exposure database tables
 ```
 python readport.py -l --var_factor_file data/input/var_factor --out_dir data/output data/input/exposures-small-sample.txt
 ```
+
+# Work Planning
+## Sprint of week 24-May-2021
+- systematic exposure aggregation
+  - aggregate total portfolio
+  - aggregate one-level breakdown
+  - aggregate multi-level breakdown
+- measure performance of systematic exposure aggregation on four portfolio sizes (10, 100, 1000, 6000)
+- learn idiosyncratic exposure aggregation
+- document setup see [Learning Notes](https://webster.bfm.com/Wiki/display/apps/Azure+POC+Learning+Notes)
