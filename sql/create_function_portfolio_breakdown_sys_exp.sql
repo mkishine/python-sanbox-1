@@ -1,8 +1,6 @@
-
-IF
-OBJECT_ID('dbo.portfolio_breakdown_sys_exp', 'IF') IS NOT NULL
+IF OBJECT_ID('dbo.portfolio_breakdown_sys_exp', 'IF') IS NOT NULL
 DROP FUNCTION dbo.portfolio_breakdown_sys_exp
-    GO
+GO
 
 CREATE FUNCTION dbo.portfolio_breakdown_sys_exp(@portfolio_name CHAR(10), @date DATE, @breakdown_name char(10))
     RETURNS TABLE AS
@@ -19,7 +17,7 @@ SELECT  s.fid, b.level_tag, sum(p.amount * s.exp / e.notional) as exp
     AND p.portfolio_name = @portfolio_name
     AND p.pos_date = @date
     AND b.name = @breakdown_name
-    GROUP BY s.fid, b.level_tag
+    GROUP BY ROLLUP(s.fid, b.level_tag)
 )
 GO
 
