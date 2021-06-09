@@ -50,6 +50,20 @@ Script for generating input files for population exposure database tables
 python readport.py -l --var_factor_file data/input/var_factor --out_dir data/output data/input/exposures-small-sample.txt
 ```
 
+## Generate_brk2_data.py
+Script for generating SQL command for populating dbo.brk2 table.
+
+### Running the Script
+First, generate insert statements.
+```
+source venv/bin/activate
+python generate_brk2_data.py --cusip_file data/input/cusips.csv --breakdown_file data/input/4p-industry-sectors.txt > brk2-insert-commands.sql
+```
+Second, use sqlcmd to push data into the database.
+```
+sqlcmd -S portrisk-synapse-workspace-name.database.windows.net -U sqladminuser -P '[redacted]' -I -d portrisk_synapse_workspace_sql_pool -e -i brk2-insert-commands.sql
+```
+
 # Work Planning
 ## Sprint of week 24-May-2021
 - systematic exposure aggregation
